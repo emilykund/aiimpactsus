@@ -1,0 +1,31 @@
+{
+  "name": "ai-impacts-us",
+  "version": "1.0.0",
+  "description": "A website dedicated to understanding AI's impact on jobs, economy, and communities in the United States",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build process needed'",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "jobs",
+    "economy",
+    "communities",
+    "us",
+    "impact",
+    "technology"
+  ],
+  "author": "AI Impacts US",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiimpactsus/website"
+  },
+  "homepage": "https://aiimpactsus.org"
+}
