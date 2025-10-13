@@ -1,0 +1,6 @@
+Patient_ID	Treatment_Group	Age	Gender	Outcome
+001	Control	45	M	0
+002	Treatment	52	F	1
+003	Control	38	M	0
+004	Treatment	61	F	1
+005	Control	29	M	0
