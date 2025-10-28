@@ -1,0 +1,62 @@
+/* Base styles */
+:root {
+  --accent: #2575fc;
+  --accent2: #6a11cb;
+  --bg: #0b1221;
+  --text: #0f172a;
+  --muted: #475569;
+  --light: #f8fafc;
+  --maxw: 1100px;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: #fff;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+.header {
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  color: #fff;
+}
+.header .inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 72px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.nav .links { display: flex; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: #fff; }
+.brand img { width: 28px; height: 28px; }
+.hero h1 { font-size: clamp(28px, 5vw, 48px); line-height: 1.1; margin: 0 0 12px; }
+.hero p { font-size: clamp(16px, 2.6vw, 20px); margin: 0 0 20px; opacity: .95; }
+.cta { display: inline-block; background: #fff; color: #111827; padding: 12px 18px; border-radius: 10px; font-weight: 600; box-shadow: 0 1px 1px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.12); }
+.section { padding: 56px 0; }
+.section h2 { font-size: clamp(22px, 4vw, 34px); margin: 0 0 16px; }
+.grid { display: grid; gap: 24px; }
+.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px; background: #fff; box-shadow: 0 1px 1px rgba(0,0,0,.02); }
+.note { background: #f1f5f9; border-left: 4px solid var(--accent); padding: 12px 14px; border-radius: 8px; }
+.footer { background: #0f172a; color: #cbd5e1; padding: 24px 0; }
+.footer a { color: #93c5fd; }
+@media (max-width: 900px) {
+  .two, .three { grid-template-columns: 1fr; }
+  .nav { flex-wrap: wrap; gap: 12px; }
+}
+
+/* Minor refinements */
+main img { border-radius: 12px; }
+ul, ol { padding-left: 18px; }
+h3 { margin-top: 0; }
